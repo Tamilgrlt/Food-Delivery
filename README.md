@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-🔗 **View Project:** http://127.0.0.1:5502/food-order-web-main/index.html
+🔗 **View Project:** http://127.0.0.1:5502/food-order-web-main/menu.html
 
 > **Note:** This is a local development URL. After deploying your project to GitHub Pages, Netlify, or Vercel, replace it with your public URL.
 
