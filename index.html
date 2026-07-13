@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salem Bites - Order Delicious Food Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="log2">
+                <img src="img/log2.png" alt="Salem Bites log2">
+                <h1>Salem Bites</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="cartLink">Cart <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="promo-badge"><i class="fas fa-percentage"></i> 50% Off Your First Order</div>
+                <h1>Delicious Food Delivered to Your Doorstep</h1>
+                <p>Order from our wide selection of mouth-watering dishes prepared by top chefs. Fresh, hot, and
+                    straight to you.</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn-primary">Order Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="about.html" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item"><i class="fas fa-shipping-fast"></i> Free Delivery</div>
+                    <div class="feature-item"><i class="fas fa-utensils"></i> Fresh Ingredients</div>
+                    <div class="feature-item"><i class="fas fa-clock"></i> 30 Min Delivery</div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-circle-bg"></div>
+                <img src="img/hero-dish.png" alt="Delicious Food Gourmet Plate" class="hero-img">
+                <div class="floating-card card-1">
+                    <i class="fas fa-star text-warning"></i>
+                    <div>
+                        <h4>4.9/5 Rating</h4>
+                        <p>Over 10k reviews</p>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-heart text-danger"></i>
+                    <div>
+                        <h4>Loved by Locals</h4>
+                        <p>Salem's #1 Choice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2>Popular Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="img/category/pizza1.jpg" alt="Pizza1">
+                    <h3>Pizza</h3>
+                </div>
+                <div class="category-card">
+                    <img src="img/category/burger1.jpg" alt="Burgers1">
+                    <h3>Burgers</h3>
+                </div>
+                <div class="category-card">
+                    <img src="img/category/sandwich1.jpg" alt="Sandwiches1">
+                    <h3>Sandwiches</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Items Section -->
+    <section class="featured">
+        <div class="container">
+            <h2>Featured Items</h2>
+            <div class="food-grid" id="featuredFoods">
+                <!-- Featured items will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <span class="close-btn" id="closeCart">&times;</span>
+            </div>
+            <div class="cart-body">
+                <div id="cartItems">
+                    <!-- Cart items will be loaded here -->
+                    <p class="empty-cart-message">Your cart is empty</p>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <h3>Total: $<span id="cartTotal">0.00</span></h3>
+                    </div>
+                    <button class="btn-primary checkout-btn" id="checkoutBtn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Salem Bites</h3>
+                    <p>Taste the Heart of Salem</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Yummy City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@salembites.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Salem Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
